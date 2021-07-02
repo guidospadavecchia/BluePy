@@ -1,7 +1,11 @@
-# BluePy
+<p align="center">
+  <img src="https://github.com/guidospadavecchia/BluePy/blob/main/static/icon.png">
+</p>
 
-## Descripción
-*Cotizaciones blue de dólar, Euro y real*
+*** 
+<p align="center">
+  <i>Cotizaciones blue de Dólar, Euro y Real</i>
+</p>  
 
 ## Endpoints
 
@@ -38,5 +42,8 @@
 | ------ | ------ | ------ |
 | GET | /api/ping | Devuelve '*pong*' si el sitio está activo |
 
+## Licencia
+Este proyecto es ***100% libre y open-source***. Está licenciado bajo la [MIT License](https://github.com/guidospadavecchia/BluePy/blob/main/LICENSE).
+
 *** 
-*Datos recopilados de https://www.paralelohoy.com.ar*
+**Datos recopilados de https://www.paralelohoy.com.ar*
