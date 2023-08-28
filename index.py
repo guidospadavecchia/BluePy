@@ -82,7 +82,7 @@ def getRealBlue():
     return jsonify(realBlue)
 
 
-@ app.route("/api/venezuela/oficial")
+@ app.route("/api/venezuela/dolar/oficial")
 @ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
 def getVenezuelaOficialRate():
     valueOficial = monitor_dolar_venezuela.getOficial()
@@ -90,7 +90,7 @@ def getVenezuelaOficialRate():
     return jsonify(response)
 
 
-@ app.route("/api/venezuela/paralelo")
+@ app.route("/api/venezuela/dolar/paralelo")
 @ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
 def getVenezuelaParaleloRate():
     valueParalelo = monitor_dolar_venezuela.getParalelo()
