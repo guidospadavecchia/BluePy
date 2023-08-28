@@ -42,8 +42,8 @@ def getOficial():
         util.convertToDecimal(value_bcv),
         util.convertToDecimal(value_bnc),
     ]
-    valores = [n for n in prices if n > 0]
-    return sum(valores) / len(valores)
+    values = [n for n in prices if n > 0]
+    return sum(values) / len(values)
 
 
 def getParalelo():
@@ -63,8 +63,8 @@ def getParalelo():
         util.convertToDecimal(value_dolartoday),
         util.convertToDecimal(value_monitor),
     ]
-    valores = [n for n in prices if n > 0]
-    return sum(valores) / len(valores)
+    values = [n for n in prices if n > 0]
+    return sum(values) / len(values)
 
 
 def formatResponse(value):
