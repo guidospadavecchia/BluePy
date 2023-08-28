@@ -3,7 +3,7 @@ import pyDolarVenezuela as pdv
 from datetime import datetime
 
 
-async def getValues():
+def getValues():
     monitor = pdv.Monitor()
     values = monitor.get_value_monitors()
     return values

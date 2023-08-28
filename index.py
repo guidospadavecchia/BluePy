@@ -82,13 +82,6 @@ def getRealBlue():
     return jsonify(realBlue)
 
 
-@ app.route("/api/venezuela/values")
-@ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
-def getVenezuelaRates():
-    values = monitor_dolar_venezuela.getValues()
-    return jsonify(values)
-
-
 @ app.route("/api/venezuela/oficial")
 @ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
 def getVenezuelaOficialRate():
