@@ -41,6 +41,23 @@
 }
 ```
 
+### Venezuela
+
+| Método | Endpoint                | Descripción                               |
+| ------ | ----------------------- | ----------------------------------------- |
+| GET    | /api/venezuela/oficial  | Cotización del par bolivar-dólar oficial  |
+| GET    | /api/venezuela/paralelo | Cotización del par bolivar-dólar paralelo |
+
+#### Respuesta
+
+```javascript
+{
+    fecha: "2021/06/30 23:26:42",
+    oficial: "32.15",
+    paralelo: "33.10"
+}
+```
+
 ### Otros
 
 | Método | Endpoint  | Descripción                               |
