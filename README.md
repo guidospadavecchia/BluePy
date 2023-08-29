@@ -22,17 +22,18 @@
 
 ### Euro
 
-| Método | Endpoint          | Descripción                  |
-| ------ | ----------------- | ---------------------------- |
-| GET    | /api/euro/oficial | Cotización del dólar oficial |
-| GET    | /api/euro/blue    | Cotización dólar blue        |
+| Método | Endpoint          | Descripción                 |
+| ------ | ----------------- | --------------------------- |
+| GET    | /api/euro/oficial | Cotización del Euro oficial |
+| GET    | /api/euro/blue    | Cotización Euro blue        |
+| GET    | /api/euro/tarjeta | Cotización Euro tarjeta     |
 
 ### Real
 
-| Método | Endpoint          | Descripción                  |
-| ------ | ----------------- | ---------------------------- |
-| GET    | /api/real/oficial | Cotización del dólar oficial |
-| GET    | /api/real/blue    | Cotización dólar blue        |
+| Método | Endpoint          | Descripción                 |
+| ------ | ----------------- | --------------------------- |
+| GET    | /api/real/oficial | Cotización del Real oficial |
+| GET    | /api/real/blue    | Cotización Real blue        |
 
 #### Respuesta
 

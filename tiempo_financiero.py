@@ -9,6 +9,7 @@ DOLAR_MEP_URL = 'https://tiempofinanciero.com.ar/cotizaciones/dolar-bolsa/'
 DOLAR_CCL_URL = 'https://tiempofinanciero.com.ar/cotizaciones/contadoliqui/'
 EURO_OFICIAL_URL = 'https://tiempofinanciero.com.ar/cotizaciones/euro/'
 EURO_BLUE_URL = 'https://tiempofinanciero.com.ar/cotizaciones/euro-blue/'
+EURO_TARJETA_URL = 'https://tiempofinanciero.com.ar/cotizaciones/euro-tarjeta/'
 REAL_OFICIAL_URL = 'https://tiempofinanciero.com.ar/cotizaciones/real-oficial/'
 REAL_BLUE_URL = 'https://tiempofinanciero.com.ar/cotizaciones/real-blue/'
 
@@ -47,6 +48,10 @@ def getEuroOficial():
 
 def getEuroBlue():
     return _getValues(EURO_BLUE_URL)
+
+
+def getEuroTarjeta():
+    return _getValues(EURO_TARJETA_URL)
 
 
 def getRealOficial():

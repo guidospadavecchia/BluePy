@@ -90,6 +90,14 @@ def getEuroBlue():
     return jsonify(euroBlue)
 
 
+@ app.route("/api/euro/tarjeta")
+@ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
+def getEuroTarjeta():
+    euroValues = tiempo_financiero.getEuroTarjeta()
+    euroTarjeta = tiempo_financiero.formatResponse(euroValues)
+    return jsonify(euroTarjeta)
+
+
 @ app.route("/api/real/oficial")
 @ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
 def getRealOficial():
