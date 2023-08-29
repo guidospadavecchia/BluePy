@@ -12,10 +12,13 @@
 
 ### Dólar
 
-| Método | Endpoint           | Descripción                  |
-| ------ | ------------------ | ---------------------------- |
-| GET    | /api/dolar/oficial | Cotización del dólar oficial |
-| GET    | /api/dolar/blue    | Cotización dólar blue        |
+| Método | Endpoint           | Descripción                                    |
+| ------ | ------------------ | ---------------------------------------------- |
+| GET    | /api/dolar/oficial | Cotización del dólar oficial                   |
+| GET    | /api/dolar/blue    | Cotización dólar blue                          |
+| GET    | /api/dolar/turista | Cotización del dólar turista                   |
+| GET    | /api/dolar/mep     | Cotización dólar MEP (Bolsa)                   |
+| GET    | /api/dolar/ccl     | Cotización dólar CCL (Contado con Liquidación) |
 
 ### Euro
 

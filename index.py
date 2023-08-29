@@ -50,6 +50,30 @@ def getDolarBlue():
     return jsonify(dolarBlue)
 
 
+@ app.route("/api/dolar/turista")
+@ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
+def getDolarTurista():
+    dolarValues = tiempo_financiero.getDolarTurista()
+    dolarTurista = tiempo_financiero.formatResponse(dolarValues)
+    return jsonify(dolarTurista)
+
+
+@ app.route("/api/dolar/mep")
+@ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
+def getDolarMep():
+    dolarValues = tiempo_financiero.getDolarMep()
+    dolarMep = tiempo_financiero.formatResponse(dolarValues)
+    return jsonify(dolarMep)
+
+
+@ app.route("/api/dolar/ccl")
+@ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
+def getDolarCcl():
+    dolarValues = tiempo_financiero.getDolarCcl()
+    dolarCcl = tiempo_financiero.formatResponse(dolarValues)
+    return jsonify(dolarCcl)
+
+
 @ app.route("/api/euro/oficial")
 @ cache.cached(timeout=CACHE_TIMEOUT_SECONDS)
 def getEuroOficial():

@@ -4,6 +4,9 @@ from datetime import datetime
 
 DOLAR_OFICIAL_URL = 'https://tiempofinanciero.com.ar/cotizaciones/dolar-oficial/'
 DOLAR_BLUE_URL = 'https://tiempofinanciero.com.ar/cotizaciones/dolar-blue/'
+DOLAR_TURISTA_URL = 'https://tiempofinanciero.com.ar/cotizaciones/dolar-turista/'
+DOLAR_MEP_URL = 'https://tiempofinanciero.com.ar/cotizaciones/dolar-bolsa/'
+DOLAR_CCL_URL = 'https://tiempofinanciero.com.ar/cotizaciones/contadoliqui/'
 EURO_OFICIAL_URL = 'https://tiempofinanciero.com.ar/cotizaciones/euro/'
 EURO_BLUE_URL = 'https://tiempofinanciero.com.ar/cotizaciones/euro-blue/'
 REAL_OFICIAL_URL = 'https://tiempofinanciero.com.ar/cotizaciones/real-oficial/'
@@ -24,6 +27,18 @@ def getDolarOficial():
 
 def getDolarBlue():
     return _getValues(DOLAR_BLUE_URL)
+
+
+def getDolarTurista():
+    return _getValues(DOLAR_TURISTA_URL)
+
+
+def getDolarMep():
+    return _getValues(DOLAR_MEP_URL)
+
+
+def getDolarCcl():
+    return _getValues(DOLAR_CCL_URL)
 
 
 def getEuroOficial():
