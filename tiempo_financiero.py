@@ -15,10 +15,12 @@ REAL_BLUE_URL = 'https://tiempofinanciero.com.ar/cotizaciones/real-blue/'
 
 
 def formatResponse(values):
+    compra = values[0].replace('.', '').replace(',', '.')
+    venta = values[1].replace('.', '').replace(',', '.')
     return {
         "fecha": datetime.today().strftime('%Y-%m-%d %H:%M:%S'),
-        "compra": f"{util.convertToDecimal((values[0].replace(',', '.'))):.2f}",
-        "venta": f"{util.convertToDecimal((values[1].replace(',', '.'))):.2f}",
+        "compra": f"{util.convertToDecimal(compra):.2f}",
+        "venta": f"{util.convertToDecimal(venta):.2f}",
     }
 
 

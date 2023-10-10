@@ -4,7 +4,7 @@ import monitor_dolar_venezuela
 from flask import Flask, send_from_directory, jsonify
 from flask_caching import Cache
 
-VERSION = "1.1"
+VERSION = "1.2"
 CACHE_TIMEOUT_SECONDS = os.getenv('CACHE_TIMEOUT', 3600)
 GIT_REPO_URL = 'https://github.com/guidospadavecchia/BluePy'
 
